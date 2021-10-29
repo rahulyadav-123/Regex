@@ -46,7 +46,7 @@ public class UserRegistration {
 			}
         }
 	public void password(String password) {	
-		Pattern pattern = Pattern.compile("^[a-zA-z]{8}$");
+		Pattern pattern = Pattern.compile("^[a-z](?=.*[A-z].{8,}$");
 		Matcher match = pattern.matcher(password);
 		if(match.find() && match.group().equals(password)) {
 			System.out.println("valid password");	
