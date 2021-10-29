@@ -34,5 +34,15 @@ public class UserRegistration {
 		else {
 			System.out.println("invalid Email");
 			}
-	}   
+	}
+	public void phoneNumber(String mobileNumber) {	
+		Pattern pattern = Pattern.compile("^(\\d{1,2}?)[- .]?\\d{9,10}$");
+		Matcher match = pattern.matcher(mobileNumber);
+		if(match.find() && match.group().equals(mobileNumber)) {
+			System.out.println("valid phoneNumber");	
+			}
+		else {
+			System.out.println("invalid phoneNumber");
+			}
+        }
 }
