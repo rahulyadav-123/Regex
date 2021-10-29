@@ -30,7 +30,7 @@ public class UserDetails {
 		ur.phoneNumber(mobileNumber);
 	}
 	
-	public <ur> void userPassword() {
+	public void userPassword() {
 		System.out.println("Enter the Password: ");
 		String password = sc.next();
 		ur.password(password);
